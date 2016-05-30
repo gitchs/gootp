@@ -1,0 +1,6 @@
+{
+  "name": "Gootp",
+  "tagline": "",
+  "body": "# GOOTP\r\n\r\n[![Build Status](https://travis-ci.org/gitchs/gootp.svg?branch=master)](https://travis-ci.org/gitchs/gootp)\r\n\r\n## Description\r\n> Another implementation of RFC4226(HOTP) and RFC6238(TOTP).\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
