@@ -47,7 +47,7 @@ func TestHOTP(t *testing.T) {
 	for index, code := range codes {
 		counter := uint64(index)
 		if !hotp.Verify(code, counter) {
-			t.Errorf("%s, %s, %s", index, code)
+			t.Errorf("%d, %s", index, code)
 			return
 		}
 	}
