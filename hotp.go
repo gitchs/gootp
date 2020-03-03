@@ -54,11 +54,7 @@ func (h HOTP) At(counter uint64) string {
 
 // Verify verify OTP code
 func (h HOTP) Verify(code string, counter uint64) bool {
-	realCode := h.At(counter)
-	if realCode == code {
-		return true
-	}
-	return false
+	return h.At(counter) == code
 }
 
 // NewHOTP generate new HOTP instance

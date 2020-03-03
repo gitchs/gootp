@@ -38,9 +38,5 @@ func (t TOTP) Now() string {
 
 // Verify verify OTP code
 func (t TOTP) Verify(code string) bool {
-	realCode := t.Now()
-	if realCode == code {
-		return true
-	}
-	return false
+	return t.Now() == code
 }
